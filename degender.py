@@ -1,7 +1,7 @@
 """ Command line script to run the de-gendering process"""
 
 import argparse
-import degenderate
+import pythem
 
 if __name__ == '__main__':
 
@@ -9,4 +9,4 @@ if __name__ == '__main__':
     parser.add_argument('input_string')
 
     args = parser.parse_args()
-    print(degenderate.replace_pronouns(args.input_string))
+    print(pythem.replace_pronouns(args.input_string))
